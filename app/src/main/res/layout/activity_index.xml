@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivo.projecto_final_ctesp_2018.index">
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/f2"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_wifi"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Wi-Fi"
+            android:textSize="50dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_cont_sen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:layout_below="@+id/btn_wifi"
+            android:text="Controller Sensor"
+            android:textSize="50dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_cont_joy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_cont_sen"
+            android:text="Controller Joystick"
+            android:background="@null"
+            android:textSize="50dp"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_cont_joy"
+            android:text="Options"
+            android:background="@null"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

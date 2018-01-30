@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivo.projecto_final_ctesp_2018.OptionsActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/leatherv3">
+    <RelativeLayout
+        android:id="@+id/lay_global"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/txt_ip"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:id="@+id/lay_ip"
+            android:layout_below="@+id/txt_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_ip"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/node_mcu"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_change_ip"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_acelarador_apres"
+            android:layout_below="@+id/lay_ip"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor - Gas"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:id="@+id/lay_acelarador_off"
+            android:layout_below="@+id/txt_acelarador_apres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_acelarador_off"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/acelerador_1"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_acelarador_off"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_acelarador_on"
+            android:layout_below="@+id/lay_acelarador_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_acelarador_on"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/acelerador_2"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_acelarador_on"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_travao_apres"
+            android:layout_below="@+id/lay_acelarador_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor - Brake"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:id="@+id/lay_travao_off"
+            android:layout_below="@+id/txt_travao_apres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_travao_off"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/acelerador_1"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_travao_off"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_travao_on"
+            android:layout_below="@+id/lay_travao_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_travao_on"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/acelerador_2"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_travao_on"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_joy_marcha_apres"
+            android:layout_below="@+id/lay_travao_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JoyStick - Drive"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:id="@+id/lay_joy_marcha_up"
+            android:layout_below="@+id/txt_joy_marcha_apres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_joy_marcha_up"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/joystick_up_com"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_joy_marcha_up"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_joy_marcha_down"
+            android:layout_below="@+id/lay_joy_marcha_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_joy_marcha_down"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/joystick_down_com"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_joy_marcha_down"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_joy_marcha_normal"
+            android:layout_below="@+id/lay_joy_marcha_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_joy_marcha_normal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/joystick_normal_ud_com"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_joy_marcha_normal"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_joy_direcao_apres"
+            android:layout_below="@+id/lay_joy_marcha_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JoyStick - Diretion"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:id="@+id/lay_joy_direcao_left"
+            android:layout_below="@+id/txt_joy_direcao_apres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_joy_direcao_left"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/joystick_right_com"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_joy_direcao_left"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_joy_direcao_right"
+            android:layout_below="@+id/lay_joy_direcao_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_joy_direcao_right"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/joystick_left_com"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_joy_direcao_right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_joy_direcao_normal"
+            android:layout_below="@+id/lay_joy_direcao_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_joy_direcao_normal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/joystick_normal_lf_com"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_joy_direcao_normal"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_luzes_apres"
+            android:layout_below="@+id/lay_joy_direcao_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lights"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"/>
+        <LinearLayout
+            android:id="@+id/lay_medios_off"
+            android:layout_below="@+id/txt_luzes_apres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_medios_off"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/med_off"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_medios_off"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_medios_on"
+            android:layout_below="@+id/lay_medios_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_medios_on"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/med_on"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_medios_on"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_maximos_off"
+            android:layout_below="@+id/lay_medios_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_maximos_off"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/maximos_off"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_maximos_off"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_maximos_on"
+            android:layout_below="@+id/lay_maximos_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/img_maximos_on"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/maximos_on"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/txt_maximos_on"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_margin="30dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+</android.support.constraint.ConstraintLayout>

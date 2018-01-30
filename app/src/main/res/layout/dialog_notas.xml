@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
+    android:background="@mipmap/leatherv3">
+
+    <TextView
+        android:id="@+id/txt_command"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change command"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/txt_ip"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change IP"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="10dp" />
+    <EditText
+        android:textColor="#ffffff"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:backgroundTint="#980f0f"
+        android:id="@+id/edt_input"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:textColorHint="#ffffff"
+        android:layout_height="wrap_content"
+        android:hint="New Command"
+        >
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lay_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:textColor="#ffffff"
+            android:id="@+id/edt_input_n1"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColorHint="#7fffffff"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:backgroundTint="#980f0f"
+            android:hint="New IP"><requestFocus />
+        </EditText>
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="."
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <EditText
+            android:textColor="#ffffff"
+            android:id="@+id/edt_input_n2"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#980f0f"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:hint="New IP"
+            android:textColorHint="#7fffffff"/>
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="."
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <EditText
+            android:textColor="#ffffff"
+            android:id="@+id/edt_input_n3"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:backgroundTint="#980f0f"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New IP"
+            android:textColorHint="#7fffffff"/>
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="."
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <EditText
+            android:textColor="#ffffff"
+            android:id="@+id/edt_input_n4"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:backgroundTint="#980f0f"
+            android:hint="New IP"
+            android:textColorHint="#7fffffff"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:textColor="#ffffff"
+        android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/btn_cancelar"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            style="?android:buttonBarButtonStyle">
+        </Button>
+        <Button
+            android:textColor="#980f0f"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/btn_alterar"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            style="?android:buttonBarButtonStyle">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
