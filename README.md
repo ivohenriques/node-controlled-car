@@ -1,6 +1,6 @@
 # NC CAR - NODE CONTROLLED CAR
 
-![NC CAR](https://raw.githubusercontent.com/ivohenriques/node-controlled-car/master/Logo_NcCar.png?token=AIMPSNW7EZNYXZMEDEAIIMK7J7TZM)
+![NC CAR](https://raw.githubusercontent.com/ivohenriques/node-controlled-car/master/Logo_NcCar.png)
 
 ## Usabilidade
 Controlar carro telecomandado através de um equipamento Android e um Access Point (NodeMCU) interligados através de uma ligação Wi-fi dedicada.
